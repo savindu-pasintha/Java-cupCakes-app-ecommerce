@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "700972627638",
+    "project_id": "lolacupcakesavindupasintha",
+    "storage_bucket": "lolacupcakesavindupasintha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700972627638:android:5bcfadb41bdf38f68b9817",
+        "android_client_info": {
+          "package_name": "com.example.lola"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700972627638-4tllm3g9333d737fulmsiqnsjqnj4n8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lola",
+            "certificate_hash": "c3eccc484279774db5aff1dd917c20e811be0870"
+          }
+        },
+        {
+          "client_id": "700972627638-9hfnvfh1t06n3001ptnd7ekmq7ssif2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrXBbN276lLOXE6BfqkgB0e3FLC9b4S1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700972627638-9hfnvfh1t06n3001ptnd7ekmq7ssif2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
