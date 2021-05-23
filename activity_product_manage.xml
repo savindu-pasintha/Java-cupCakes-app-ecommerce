@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductManage">
+
+    <EditText
+        android:id="@+id/name_txt"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Name   ->   CupCake1"
+        android:inputType="textPersonName"
+        android:textColor="#1B1919"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <EditText
+        android:id="@+id/price_txt"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Price    ->    $14.33"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <EditText
+        android:id="@+id/category_text"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Category Name -> Birthday"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:background="@drawable/arrow_back"
+        android:onClick="goBack"
+        app:backgroundTint="#1C1C1C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/code_txt"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Code    ->     #code1"
+        android:inputType="textPersonName"
+        android:textColor="#0E0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <EditText
+        android:id="@+id/description_txt"
+        android:layout_width="311dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="288dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description    ->  Surprise your mother this Mother's day with these delectable chocolate cupcakes topped with a swirl. "
+        android:inputType="textMultiLine"
+        android:textColor="#191818"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="98dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="addProduct"
+        android:text="Add"
+        app:backgroundTint="#7C4DFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="92dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="deleteProduct"
+        android:text="Delete"
+        app:backgroundTint="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/delete_btn3"
+        android:layout_width="118dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="userManage"
+        android:text="Users"
+        android:textColor="#F6F5F5"
+        app:backgroundTint="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/delete_btn2"
+        android:layout_width="92dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="deleteProductAll"
+        android:text="Delete All"
+        android:textSize="14sp"
+        app:backgroundTint="#FF4081"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="116dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="updateProduct"
+        android:text="Update"
+        android:textColor="#1B1919"
+        app:backgroundTint="#8BFF4D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="312dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="CUPCAKES MANAGE"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/see_btn"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="seeView"
+        android:text="see"
+        android:textColor="#64FFDA"
+        app:backgroundTint="#101010"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/img_add_btn"
+        android:layout_width="55dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/ic_baseline_add_photo_alternate_24"
+        android:onClick="select_image"
+        app:backgroundTint="#E81A1A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/all_btn"
+        android:layout_width="73dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="seeAll"
+        android:text="All"
+        android:textColor="#0E0E0E"
+        app:backgroundTint="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="133dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

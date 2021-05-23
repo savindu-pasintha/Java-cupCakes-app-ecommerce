@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML implementation of Card Layout-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageVariable"
+        android:layout_width="422dp"
+        android:layout_height="233dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:onClick="viewClickedImage"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textVariable"
+        android:layout_width="419dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#131313"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageVariable" />
+
+
+    <TextView
+        android:id="@+id/priceVariable"
+
+        android:layout_width="89dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textColor="#171717"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/priceVariable2"
+        app:layout_constraintTop_toBottomOf="@+id/categoryVariable"
+        tools:text="12.00" />
+
+    <TextView
+        android:id="@+id/priceVariable2"
+
+        android:layout_width="58dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="cursive"
+        android:text="$"
+        android:textColor="#0862F8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/priceVariable"
+        app:layout_constraintTop_toBottomOf="@+id/categoryVariable"
+        tools:text="$" />
+
+    <TextView
+        android:id="@+id/hartVariable"
+        android:layout_width="66dp"
+
+        android:layout_height="51dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/heart"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/salesVariable"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryVariable" />
+
+    <TextView
+        android:id="@+id/idtext"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesVariable" />
+
+    <TextView
+        android:id="@+id/salesVariable"
+
+        android:layout_width="107dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="168"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryVariable" />
+
+    <TextView
+        android:id="@+id/categoryVariable"
+
+        android:layout_width="406dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="cursive"
+        android:gravity="start"
+        android:text="category name"
+        android:textAlignment="center"
+        android:textColor="#7C4DFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVariable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
